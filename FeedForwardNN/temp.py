@@ -75,7 +75,6 @@ for i in range(num_epochs):
 
 # Predict output for test input
 test_input = [[374.35,296.55,62.14,35.16,36.96,28.18,56.53,75.65,78.38,162.61,56.70,30.64,32.97,67.67,104.95,200.48]]
-print("TEST INPUT: ", test_input)
 test_output = sigmoid(np.dot(sigmoid(np.dot(test_input, weights1)), weights2))
 
 print("Input: {}".format(test_input))
